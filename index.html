@@ -31,6 +31,11 @@
             font-family: "Instrument Serif", "Instrument Sans", serif;
             background: var(--bg);
             color: var(--fg);
+            animation-name: fadein;
+            animation-delay: 0.3s;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+            opacity: 0;
         }
 
         header {
@@ -202,6 +207,16 @@
             color: var(--muted);
             text-align: center;
             opacity: 0.4;
+        }
+
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
         }
     </style>
 
